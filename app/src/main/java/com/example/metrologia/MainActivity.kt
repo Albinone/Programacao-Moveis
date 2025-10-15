@@ -58,7 +58,7 @@ fun TopBar(): Unit{
         ){
             Image(
                 painter = painterResource(id = R.drawable.search),
-                contentDescription = "Foto",
+                contentDescription = "Search",
 
                 )
 
