@@ -99,8 +99,6 @@ fun TopBar(): Unit{
 }
 
 
-
-
 @Preview(showBackground = true)
 @Composable
 fun FullComponent(): Unit {
@@ -146,7 +144,7 @@ fun TextBlock(): Unit {
         Row {
             Text("Olá", fontSize = 20.sp)
             Spacer(modifier = Modifier.size(size = 3.dp))
-            Text("Carlos", fontWeight = FontWeight.Bold,fontSize = 22.sp)
+            Text("JAlbino", fontWeight = FontWeight.Bold,fontSize = 22.sp)
         }
             Text("17 de Outubro de 2025", fontSize = 20.sp)
 
@@ -171,15 +169,10 @@ fun BlocoCentral (){
     }
 
 }
-@Preview
-@Composable
-fun Previsão (){
-    Row (horizontalArrangement = Arrangement.Center, modifier = Modifier.fillMaxWidth().padding(top = 15.dp).background(color = Color.Blue)) {
-    }
-}
 
 // Classe que guarda os dados de cada previsão meteorológica (ícone, temperatura e descrição)
 data class WeatherItemData(val image: Int, val temp: String, val description: String)
+
 
 // --- Lista horizontal com as previsões dos próximos dias ---
 @Preview(showBackground = true)
